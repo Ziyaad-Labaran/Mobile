@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<style>
+        .testimonials {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: white;
+        }
+        .testimonial-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+        .testimonial {
+            width: 40%;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .testimonial.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .author {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+        }
+        .author img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        
+        body {
+                    font-family: Arial, sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    background-color: #f4f4f4;
+                }
+                header {
+                    background: #35424a;
+                    color: #ffffff;
+                    padding: 10px 20px;
+                    text-align: center;
+                }
+                .container {
+                    width: 80%;
+                    margin: auto;
+                    overflow: hidden;
+                    padding: 20px;
+                }
+                .filter {
+                    margin: 20px 0;
+                    display: flex;
+                    justify-content: center;
+                }
+        .filter select {
+            padding: 10px;
+            font-size: 16px;
+        }
+        .projects{
+            display: flex;
+        }
+        .project {
+            background: #ffffff;
+            width:40% ;
+            margin: 15px 0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .project:hover {
+            transform: scale(1.02);
+        }
+        .project img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .project h3 {
+            color: #35424a;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #35424a;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <section class="testimonials">
+        <h2>What Clients Are Saying...</h2>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <p>&ldquo;Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit...&rdquo;</p>
+                <div class="author">
+                    <img src="team-1.jpg" alt="Satya Nadella">
+                    <div>
+                        <h4>Satya Nadella</h4>
+                        <p>CEO, Microsoft</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <p>&ldquo;Qui ipsam temporibus quisquam vel maiores eos cumque distinctio nam...&rdquo;</p>
+                <div class="author">
+                    <img src="team-3.jpeg" alt="Tim Cook">
+                    <div>
+                        <h4>Tim Cook</h4>
+                        <p>CEO, Apple</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+<header>
+    <h1>Our Projects</h1>
+</header>
+  
+<div class="container">
+    <div class="filter">
+        <label for="service">Filter by Service Type:</label>
+        <select id="service" onchange="filterProjects()">
+            <option value="all">All</option>
+            <option value="web-app">Web Apps</option>
+            <option value="mobile-app">Mobile Apps</option>
+            <option value="ecommerce">E-commerce</option>
+        </select>
+    </div>
+  
+    <div id="projects">
+        <div class="project" data-service="web-app">
+            <img src="" alt="Project 1">
+            <h3>Project One</h3>
+            <p>Short description of Project One.</p>
+            <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript</p>
+            <p><strong>Client Feedback:</strong> "Great work!"</p>
+        </div>
+        <div class="project" data-service="mobile-app">
+            <img src="" alt="Project 2">
+            <h3>Project Two</h3>
+            <p>Short description of Project Two.</p>
+            <p><strong>Technologies Used:</strong> React Native</p>
+            <p><strong>Client Feedback:</strong> "Highly recommend!"</p>
+        </div>
+        <div class="project" data-service="ecommerce">
+            <img src="" alt="Project 3">
+            <h3>Project Three</h3>
+            <p>Short description of Project Three.</p>
+            <p><strong>Technologies Used:</strong> Shopify, HTML, CSS</p>
+            <p><strong>Client Feedback:</strong> "Exceeded expectations!"</p>
+        </div>
+        <div class="project" data-service="web-app">
+            <img src="" alt="Project 1">
+            <h3>Project One</h3>
+            <p>Short description of Project One.</p>
+            <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript</p>
+            <p><strong>Client Feedback:</strong> "Great work!"</p>
+        </div>
+        <div class="project" data-service="mobile-app">
+            <img src="" alt="Project 2">
+            <h3>Project Two</h3>
+            <p>Short description of Project Two.</p>
+            <p><strong>Technologies Used:</strong> React Native</p>
+            <p><strong>Client Feedback:</strong> "Highly recommend!"</p>
+        </div>
+        <div class="project" data-service="ecommerce">
+            <img src="" alt="Project 3">
+            <h3>Project Three</h3>
+            <p>Short description of Project Three.</p>
+            <p><strong>Technologies Used:</strong> Shopify, HTML, CSS</p>
+            <p><strong>Client Feedback:</strong> "Exceeded expectations!"</p>
+        </div>
+    </div>
+</div>
+  
+<footer>
+    <p>&copy; 2025 Your Company. All Rights Reserved.</p>
+</footer>
+  
+<script>
+    function filterProjects() {
+        const filterValue = document.getElementById('service').value;
+        const projects = document.querySelectorAll('.project');
+  
+        projects.forEach(project => {
+            if (filterValue === 'all' || project.getAttribute('data-service') === filterValue) {
+                project.style.display = 'block';
+            } else {
+                project.style.display = 'none';
+            }
+        });
+    }
+
+    </script>
+</body>
+</html>
+

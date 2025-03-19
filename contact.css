@@ -1,0 +1,78 @@
+*{
+        margin: 0px;
+        padding: 0px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px;
+}
+.main-section{
+    display: flex;
+    width: 80%;
+    background:url(trendy-orange-abstract-background-presentation-design-orange-background-use-poster-template_676.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    margin:auto;
+    justify-content: space-around;
+    border-radius: 30px;
+
+}
+.first{
+padding: 100px;
+color: rgb(11, 23, 127);
+}
+.text-main{
+    display: grid;
+    color: rgb(11, 23, 127);
+}
+.container {
+    width: 40%;
+    height: 75%;
+    margin: auto;
+   background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+ .container h1 {
+    text-align: center;
+    color: orange;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+label {
+display: block;
+margin-bottom: 5px;
+color: #555;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+width: 94%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+button {
+width: 100%;
+padding: 10px;
+background:url(trendy-orange-abstract-background-presentation-design-orange-background-use-poster-template_676.jpg) ;
+color: white;
+border: none;
+border-radius: 7px;
+cursor: pointer;
+}
+button:hover {
+    box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact{
+    margin: 0 auto;
+   padding-bottom: 7cm;
+
+}

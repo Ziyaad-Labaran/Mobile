@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="services.css">
+  <title>Services</title>
+
+</head>
+<body>
+
+  <nav>
+    <div class="container">
+      <div class="logo">KINGZII</div>
+      <ul>
+        <li><a href="index.html">Home </a></li>
+        <li><a href="About.html">About </a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <header>
+    <div>
+      <h1>Welcome to Our Services</h1>
+      <p>We provide professional solutions to bring your ideas to life.</p>
+    </div>
+  </header>
+
+
+  <section id="web-apps" class="fade-in">
+    <h2>Web App Development</h2>
+    <div class="card1">
+        <div>
+        <img src="web.png" alt="Support" style=" width: 40%;" >
+    </div>
+<div style="width: 50%;">
+    <h4color: black; font-size: 1.1rem;" >At Kingzii, we specialize in creating cutting-edge web applications designed to streamline your processes, enhance user experiences, and drive business growth. Our team of expert developers and designers craft scalable, secure, and intuitive web apps tailored to your unique needs. Whether you're looking to improve efficiency, increase engagement, or expand your online presence, our innovative solutions ensure that your business stays ahead in today’s digital world.
+
+        Let us transform your ideas into powerful web experiences that deliver real results.</h4>
+        </div>
+      </div>
+
+   
+  </section>
+
+<section class="bg-main">
+  <section id="mobile-apps" class="fade-in">
+    <h2 style="color: aliceblue;">Mobile App Development</h2>
+    <div class="grid grid-2">
+      <div class="card">
+        <img src="ios1.png" alt="iOS">
+        <h3>iOS Development</h3>
+        <p>We deliver high-quality iOS apps tailored to your needs. From conceptualization to deployment, our team of skilled developers works closely with you to create custom iOS apps that align with your business goals and meet the highest standards of functionality and design.</p>
+      </div>
+      <div class="card">
+        <img src="andriod.png" alt="Android">
+        <h3>Android Development</h3>
+        <p>we specialize in creating dynamic, feature-rich Android applications designed to deliver exceptional performance and user experience on all Android devices. Our expert developers work closely with you to bring your ideas to life, crafting custom apps that are intuitive, scalable, and optimized for the Android ecosystem.</p>
+      </div>
+      
+    </div>
+    
+  </section>
+
+  <section id="services" class="fade-in">
+    <div class="grid grid-2">
+      <div class="card">
+        <img src="seo.webp" alt="SEO">
+        <h3>SEO</h3>
+        <p>we help businesses boost their online visibility and drive targeted traffic through proven SEO strategies. Our team of SEO specialists uses the latest techniques to optimize your website, ensuring it ranks higher on search engines and reaches your ideal audience..</p>
+      </div>
+      <div class="card">
+        <img src="digital m.jpg" alt="Marketing">
+        <h3>Digital Marketing</h3>
+        <p> we help businesses navigate the digital landscape with innovative solutions that drive growth, enhance customer engagement, and optimize online performance.</p>
+      </div>
+      <div class="card">
+        <img src="support.png" alt="Support">
+        <h3>Support & Maintenance</h3>
+        <p>Our comprehensive maintenance and support services are designed to ensure that your applications, websites, and digital platforms operate at peak performance, year-round. From regular updates and bug fixes to security patches and troubleshooting.</p>
+      </div>
+    </div>
+  </section>
+
+<section>
+  <div class="card" style="max-width:600px ;margin-left: 25%;">
+    <div>
+    <img src="ios1.png" alt="iOS">
+    <h3>UI/UX Design</h3>
+    <p>User-centered design that creates engaging and intuitive digital experiences.</p>
+  </div>
+</div>
+</section>
+</section>
+
+  <section id="portfolio" class="fade-in">
+    <h2>Portfolio</h2>
+    <div class="grid grid-2 portfolio">
+      <div>
+        <img src="serve1.png" alt="Project 1">
+        <a href="#">View Project</a>
+      </div>
+      <div>
+        <img src="serve2.png" alt="Project 2">
+        <a href="#">View Project</a>
+      </div>
+      <div>
+        <img src="serve3.png" alt="Project 2">
+        <a href="#">View Project</a>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <p>&copy; Kingzii. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const fadeInElements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    fadeInElements.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

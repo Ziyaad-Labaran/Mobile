@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    transition: background 0.3s,color 0.3s;
+}
+.dark-mode{
+    background-color: #222;
+    color: white;
+}
+.dark-mode .navbar{
+    background-color: #000;
+}
+.dark-mode .services{
+    background-color: #333;
+    color: white;
+}
+.dark-mode .contact-form{
+    background-color: #444;
+    color: white;
+}
+.dark-mode footer{
+    background-color: #000;
+}
+.navbar{
+    padding: 15px 30px;
+}
+.navbar-brand{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.hero{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('hero-bg.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+.hero h1{
+    font-size: 3rem;
+    font-weight: bold;
+    animation: fadeInDown 1s ease-in-out;
+}
+.hero p{
+    font-size: 1.2rem;
+    margin-top: 10px;
+    animation: fadeInUp 1s ease-in-out;
+}
+.services{
+    padding: 60px 20px;
+    background: white;
+}
+
+.services{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+    font-weight: bold;
+}
+.services .col-md-4:hover{
+    transform: translateY(-10px);
+    background-color: #f1f1f1;
+}
+
+.contact-form{
+    padding: 60px 20px;
+    background: #f7f7f7;
+}
+
+.contact-form form{
+    max-width: 60px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.floating-call{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #28a745;
+    color: white;
+    font-size: 1.5rem;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.floating-call:hover{
+    background: #218838;
+}
+
+@keyframes fadeInDown{
+    form{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeInUp{
+    form{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
