@@ -24,12 +24,7 @@ body {
     scroll-behavior: smooth;
   }
   
-  .containerz {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
+ 
 .navbar {
     position: fixed;
     width: 100%;
