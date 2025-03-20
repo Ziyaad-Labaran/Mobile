@@ -117,14 +117,14 @@ nav {
 }
 
 .nav-links a {
-  color: #eee; /* Slightly lighter text for better readability */
+  color: #eee;
   text-decoration: none;
   padding-bottom: 5px;
-  transition: color 0.3s ease; /* Smooth color transition on hover */
+  transition: color 0.3s ease; 
 }
 
 .nav-links a:hover {
-  color: #00a0e9; /* Professional blue hover color */
+  color: #00a0e9; 
 }
 
 .nav-links a::after {
