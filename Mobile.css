@@ -138,9 +138,7 @@ body {
     align-items: center;
     text-align: center;
     padding-top: 16rem;
-    
-   
-
+ 
 }
 .about-us-section{
     height: 80vh;
@@ -157,7 +155,7 @@ body {
     align-items: center;
 }
 .about-container:hover{
-    /* transform: scale(1.5); */
+    transform: scale(1.5);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 .about-text{
@@ -188,7 +186,8 @@ body {
 }
 
 .service-card:hover {
-  box-shadow: 0 4px 3px rgba(58, 57, 57, 0.2);
+   transform: scale(1.5);
+   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .icon {
