@@ -13,11 +13,8 @@
     text-decoration: none;
   }
 
-
-
 body {
     font-family: Arial, sans-serif;
-    /* line-height: 1.6; */
    background-repeat: no-repeat;
 
 }
@@ -43,7 +40,7 @@ body {
   background-color: #1E3D59;
   color: white;
   padding: 15px 20px;
-  border: 1px solid white;
+  border: 1px solid var(--accent-white);
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -57,7 +54,7 @@ body {
 .portfolio-button {
   background-color: transparent;
   border: 1px solid white;
-  color: white;
+  color:var(--accent-white);
   padding: 15px 20px;
   border-radius: 8px;
   cursor: pointer;
