@@ -155,7 +155,7 @@ nav {
 
 .get-in-touch:hover {
   transform: rotate(360deg);
-  background-color: #007bb5; /* Darker blue on hover */
+  background-color: #007bb5; 
 }
 
 .menu-toggle {
@@ -187,43 +187,6 @@ nav {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-@media (max-width: 768px) {
-  .nav-right {
-      flex-direction: column;
-      align-items: flex-start;
-      width: 100%;
-  }
-
-  .nav-links {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      text-align: center;
-      background-color: #222;
-      position: relative;
-      top: 0;
-      left: 0;
-  }
-
-  .nav-links.active {
-      display: flex;
-  }
-
-  .nav-links li {
-      margin: 10px 0;
-  }
-
-  .menu-toggle {
-      display: flex;
-  }
-
-  .get-in-touch {
-      width: 50%; 
-      margin: 10px auto;
-      padding: 8px 16px; 
-      font-size: 0.9em; 
-  }
-}
 
 .hero {
     display: flex;
@@ -471,4 +434,43 @@ footer {
   text-align: center;
   margin-top: 20px;
   color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .nav-right {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+  }
+
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      background-color: #222;
+      position: relative;
+      top: 0;
+      left: 0;
+  }
+
+  .nav-links.active {
+      display: flex;
+  }
+
+  .nav-links li {
+      margin: 10px 0;
+  }
+
+  .menu-toggle {
+      display: flex;
+  }
+
+  .get-in-touch {
+      width: 50%; 
+      margin: 10px auto;
+      padding: 8px 16px; 
+      font-size: 0.9em; 
+      text-align: center;
+  }
 }
