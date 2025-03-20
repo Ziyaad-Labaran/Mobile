@@ -85,18 +85,18 @@ body {
 }
 
 nav {
-  background-color: #222; /* Darker background for professional look */
+  background-color: #222;
   color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  position: relative; /* Needed for absolute positioning of menu toggle */
+  position: relative; 
 }
 
 .logo {
   font-size: 1.5em;
-  font-weight: 600; /* Semi-bold for a more professional feel */
+  font-weight: 600; 
 }
 
 .nav-right {
