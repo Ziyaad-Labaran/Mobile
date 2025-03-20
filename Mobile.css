@@ -154,9 +154,10 @@ body {
     justify-content: center;
     align-items: center;
     transition: box-shadow 1.2s;
+    transition-duration:1.3s;
 }
 .about-container:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 .about-text{
@@ -184,10 +185,11 @@ body {
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: box-shadow 1.2s;
+  transition-duration:1.3s;
 }
 
 .service-card:hover {
-   transform: scale(1.2);
+   transform: scale(1.1);
    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
