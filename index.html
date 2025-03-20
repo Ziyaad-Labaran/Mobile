@@ -11,7 +11,177 @@
 </head>
 <section class="first">
 <body>
-    <header>
+
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        nav {
+            background-color: #222; /* Darker background for professional look */
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            position: relative; /* Needed for absolute positioning of menu toggle */
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: 600; /* Semi-bold for a more professional feel */
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+            position: relative;
+        }
+
+        .nav-links a {
+            color: #eee; /* Slightly lighter text for better readability */
+            text-decoration: none;
+            padding-bottom: 5px;
+            transition: color 0.3s ease; /* Smooth color transition on hover */
+        }
+
+        .nav-links a:hover {
+            color: #00a0e9; /* Professional blue hover color */
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: #00a0e9;
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .get-in-touch {
+            background-color: #00a0e9;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.5s ease, background-color 0.3s ease;
+        }
+
+        .get-in-touch:hover {
+            transform: rotate(360deg);
+            background-color: #007bb5; /* Darker blue on hover */
+        }
+
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            position: absolute;
+            top: 15px;
+            right: 20px;
+        }
+
+        .menu-toggle div {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            margin: 3px 0;
+            transition: transform 0.3s ease;
+        }
+
+        .menu-toggle.active div:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .menu-toggle.active div:nth-child(2) {
+            opacity: 0;
+        }
+
+        .menu-toggle.active div:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        @media (max-width: 768px) {
+            .nav-right {
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+                background-color: #222;
+                position: relative;
+                top: 0;
+                left: 0;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                margin: 10px 0;
+            }
+
+            .menu-toggle {
+                display: flex;
+            }
+
+            .get-in-touch {
+                width: 80%; /* Smaller button on mobile */
+                margin: 10px auto;
+                padding: 8px 16px; /* Slightly smaller padding */
+                font-size: 0.9em; /* Smaller font size on mobile */
+            }
+        }
+    </style>
+    <nav>
+        <div class="logo">My Logo</div>
+        <div class="nav-right">
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <a href="#" class="get-in-touch" id="getInTouch">Get in Touch</a>
+        </div>
+        <div class="menu-toggle" id="menuToggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+
+
+    <!-- <header>
         <nav class="navbar">
             <div class="container">
                 <div class="flex">
@@ -27,7 +197,7 @@
                 </div>
             </div>
         </nav>
-    </header>
+    </header> -->
 
     <section class="hero">
         <div class="hero-text">
@@ -282,9 +452,16 @@ digital solutions.
         </div>
     </div>
 </footer>
-
+</main>
 
 <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
        
         document.addEventListener("DOMContentLoaded", () => {
             const testimonials = document.querySelectorAll(".testimonial");
@@ -296,6 +473,5 @@ digital solutions.
         });
     
 </script>
-</main>
 </body>
 </html>

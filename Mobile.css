@@ -32,6 +32,13 @@ body {
     padding: 0 20px;
 }
 
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* 
 .navbar {
     position: fixed;
     width: 100%;
@@ -42,11 +49,6 @@ body {
     padding: 20px 0;
 }
 
-.flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
 .logo {
     font-size: 2rem;
@@ -92,7 +94,7 @@ body {
 
  .nav-button:hover {
  box-shadow: 1px 2px 2px 3px #9e9898 ;
-}
+} */
 
 
 .portfolio-button {
