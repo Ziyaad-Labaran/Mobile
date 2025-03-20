@@ -396,49 +396,8 @@ footer a {
     color: #ffcc00;
     transition: color 0.3s ease-in-out;
 }
-
-/* @media (max-width: 768px) {
-    #mission {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .service-cards {
-        flex-direction: column;
-    }
-
-    .service-card {
-        width: 100%;
-    }
-}
- 
-
 @media (max-width: 768px) {
-    #mission {
-        flex-direction: column;
-        text-align: center;
+    .container1{
+        font-size: 60%;
     }
-
-    .reason-cards {
-        flex-direction: column;
-    }
-
-    .reason-card {
-        width: 100%;
-    }
-}
-
-
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-
-    .content {
-        max-width: 100%;
-    }
-
-    .image {
-        max-width: 100%;
-    }
-} */
+  }
