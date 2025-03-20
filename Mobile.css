@@ -38,6 +38,21 @@ body {
   justify-content: space-between;
 }
 
+
+.quote-button {
+  background-color: #1E3D59;
+  color: white;
+  padding: 15px 20px;
+  border: 1px solid white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.quote-button:hover {
+  background-color:black;
+  box-shadow: 1px 2px 2px 3px #9e9898 ;
+}
 /* 
 .navbar {
     position: fixed;
@@ -66,20 +81,6 @@ body {
     text-decoration: none;
 }
 
-.quote-button {
-  background-color: #1E3D59;
-  color: white;
-  padding: 15px 20px;
-  border: 1px solid white;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.quote-button:hover {
-  background-color:black;
-  box-shadow: 1px 2px 2px 3px #9e9898 ;
-}
 
 .nav-button{
     background-color: #1E3D59;
