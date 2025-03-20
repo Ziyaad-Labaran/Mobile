@@ -79,7 +79,6 @@ html {
         color: #fff;
       }
   
-      /* Section Styles */
       section {
         padding: 4rem 2rem;
       }
@@ -90,7 +89,6 @@ html {
         color: #2575fc;
       }
   
-      /* Grid Layout */
       .grid {
         display: grid;
         gap: 2rem;
@@ -98,8 +96,7 @@ html {
       .grid-2 {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       }
-  
-   
+
       .card {
         background: #fff;
         border-radius: 10px;
@@ -144,8 +141,7 @@ html {
         transform: scale(1.03);
       }
       .portfolio a {
-        display: inline-block;
-        margin-top: 0.5rem;
+        margin-top: 1.2rem;
         color: #2575fc;
         text-decoration: none;
         font-weight: bold;
