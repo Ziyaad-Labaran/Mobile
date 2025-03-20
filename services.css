@@ -195,10 +195,10 @@ html {
   
       @media (max-width: 768px) {
         nav .container {
-          flex-direction: column;
+          flex-direction: row;
         }
         nav ul {
-          flex-direction: column;
+          flex-direction: row;
           margin-top: 1rem;
         }
       }
