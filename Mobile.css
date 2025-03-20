@@ -183,14 +183,13 @@ body {
   background-color: rgb(255, 255, 255);
   padding: 30px;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 1.2s;
-  transition-duration:1.3s;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .service-card:hover {
-   transform: scale(0.7);
-   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .icon {
