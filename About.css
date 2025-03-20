@@ -397,7 +397,7 @@ footer a {
     transition: color 0.3s ease-in-out;
 }
 @media (max-width: 768px) {
-    .container1{
+    .container1 h1 h2{
         font-size: 60%;
     }
   }
