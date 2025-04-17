@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="ims-si.png" type="image/x-icon">
-    <title>About Us  Page</title>
+    <title>About Us Page</title>
     <link rel="stylesheet" href="About.css">
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -13,28 +13,32 @@
 <body>
   
     <header>
-        <div class="logo"> <strong><h1>Kingzii</h1></strong></div>
-        <div>
-        <nav>
+        <div class="logo"><strong><h1>Kingzii</h1></strong></div>
+        
+        <div class="hamburger-menu">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        
+        <nav class="nav-menu">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="About.html">About</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="contact.html">Contact us</a></li>
-              
             </ul>
-    </nav>
-</div>
+        </nav>
     </header>
  
     <section id="about">
         <div class="container1">
-            <h1 data-aos="fade-up" style="color: rgb(255, 255, 255);"> <span style="border-bottom: 3px solid black;">About Us</span></h1>
-            <div style="width:40% ; margin-left: 20%; margin-top: 6%; color: white; font-size: 1.4rem;">
-                <h2 data-aos="fade-up" data-aos-delay="300"> We are passionate about empowering entrepreneurs and growing companies by delivering innovative, scalable, and user-friendly digital solutions.</h2>
+            <h1 data-aos="fade-up" style="color: rgb(255, 255, 255);"><span style="border-bottom: 3px solid black;">About Us</span></h1>
+            <div style="max-width: 600px; margin: 0 auto; padding: 20px; color: white;">
+                <h2 data-aos="fade-up" data-aos-delay="300">We are passionate about empowering entrepreneurs and growing companies by delivering innovative, scalable, and user-friendly digital solutions.</h2>
                 <br>
-                <button data-aos="zoom-in" style="width: 20%; height: 1.1cm; border-radius: 13px; border: 1px solid black; background-color:  rgb(221, 218, 36);"> View Portfolio </button>
+                <button data-aos="zoom-in">View Portfolio</button>
             </div>
         </div>
     </section>
@@ -45,10 +49,8 @@
                 <div class="team-member" data-aos="zoom-in" data-aos-delay="300">
                 </div>
                 <div class="team-member2" data-aos="zoom-in" data-aos-delay="300">
-                    <div style="height: 50%;">
-                        <h1 data-aos="fade-right">Our Brand Story</h1>
-                        <p data-aos="fade-left">At MATT, our journey began with a simple mission: to help small businesses thrive in a digital-first world. It all started when [Founder Name] faced the struggles of managing a business without a digital presence. Frustrated by limited, expensive options, we decided to create affordable, high-quality web and mobile solutions that were easy to use and tailored to the unique needs of entrepreneurs. Our goal is to empower growing companies with the tools they need to succeed in a competitive market.</p>
-                    </div>
+                    <h1 data-aos="fade-right">Our Brand Story</h1>
+                    <p data-aos="fade-left">At MATT, our journey began with a simple mission: to help small businesses thrive in a digital-first world. It all started when [Founder Name] faced the struggles of managing a business without a digital presence. Frustrated by limited, expensive options, we decided to create affordable, high-quality web and mobile solutions that were easy to use and tailored to the unique needs of entrepreneurs. Our goal is to empower growing companies with the tools they need to succeed in a competitive market.</p>
                 </div>
             </div>
         </div>
@@ -66,7 +68,7 @@
                 <div class="reason-card" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="400">
                     <img src="solutions.png" alt="Tailored Solutions" style="height: 70px; width: 70px;">
                     <h3>Tailored to Your Needs</h3>
-                    <p>We understand that every business is unique. That’s why we offer fully customized solutions that address your specific needs, challenges, and goals. Whether you need a robust website, an engaging mobile app, or an intuitive user interface, we deliver the right solution for you.</p>
+                    <p>We understand that every business is unique. That's why we offer fully customized solutions that address your specific needs, challenges, and goals. Whether you need a robust website, an engaging mobile app, or an intuitive user interface, we deliver the right solution for you.</p>
                 </div>
                 <div class="reason-card" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600">
                     <img src="pngtree-customer-centricity-rgb-color-icon-cartoon-centricity-core-vector-png-image_41187580-removebg-preview.png" alt="Customer Focused" style="height: 90px; width: 90px;">
@@ -82,9 +84,7 @@
             <div class="content" data-aos="fade-up">
                 <div>
                     <h2>Who We Serve</h2>
-                    <br>
                     <p>We specialize in building mobile apps, web apps, and user interfaces that are tailored to small businesses and entrepreneurs. We work with a variety of industries including retail, hospitality, and tech startups. Our solutions are designed to help businesses grow by solving real-world challenges, whether it's reaching more customers, improving internal workflows, or creating a memorable online experience for users.</p>
-                    <br>
                     <button data-aos="zoom-in">Learn More</button>
                 </div>
             </div>
@@ -98,58 +98,51 @@
                 <div class="service-card" data-aos="flip-left">
                     <img src="Elon.jpg" alt="Web Development">
                     <h3>Elon Musk</h3>
-                   <strong> <p> Founder & Ceo</p></strong>
+                    <strong><p>Founder & CEO</p></strong>
                     <p>As the founder of MATT, Elon Musk leads our team with a passion for creating digital solutions that make a difference. With over 25 years of experience in tech, they are dedicated to helping small businesses navigate the digital world.</p>
                 </div>
                 <div class="service-card" data-aos="flip-left" data-aos-delay="300">
                     <img src="team-3.jpeg" alt="Mobile Development" style="border-radius: 25px;">
-                     <h3>Anita Smith</h3>
-                     <strong><p>Chief Accountant </p></strong>
-                     <p>Anita Smith is responsible for overseeing the entire accounting department, ensuring that financial records are accurate, and that taxes are prepared and filed correctly.</p>
+                    <h3>Anita Smith</h3>
+                    <strong><p>Chief Accountant</p></strong>
+                    <p>Anita Smith is responsible for overseeing the entire accounting department, ensuring that financial records are accurate, and that taxes are prepared and filed correctly.</p>
                 </div>
                 <div class="service-card" data-aos="flip-left" data-aos-delay="600">
-                    <img src="team-1.jpg" alt="UI/UX Design"  style="border-radius: 25px;">
-                  <h3> James Clear</h3>
-                  <strong>  <p>Sales Manager</p></strong>
+                    <img src="team-1.jpg" alt="UI/UX Design" style="border-radius: 25px;">
+                    <h3>James Clear</h3>
+                    <strong><p>Sales Manager</p></strong>
                     <p>James Clear ensures that every digital solution is built to scale, offering expertise in both mobile and web development.</p>
                 </div>
             </div>
         </div>
     </section>
  
-<section class="customers">
-    <div class="customers-card" data-aos="flip-left" data-aos-delay="600">
-        <div>
-        <h1 class="number"> 20K</h1>
-        <p>Tasks</p>
-    </div>
-    </div>
-    <div class="customers-card" data-aos="flip-left" data-aos-delay="600">
-        <div>
-        <h1> 7K</h1>
-        <p>Happy Clients</p>
-    </div>
-    </div>
-    <div class="customers-card" data-aos="flip-left" data-aos-delay="600">
-        
-        <div>
-        <h1>156 </h1>
-        <p>Mobile Apps</p>
-    </div>
-    </div>
-    <div class="customers-card" data-aos="flip-left" data-aos-delay="600">
-        <div>
-        <h1> 65</h1>
-        <p>Unique ideas</p>
-    </div>
-    </div>
-</section>
-
-<section class="reviews">
-
-
-    
-</section>
+    <section class="customers">
+        <div class="customers-card" data-aos="flip-left" data-aos-delay="200">
+            <div>
+                <h1 class="number">20K</h1>
+                <p>Tasks</p>
+            </div>
+        </div>
+        <div class="customers-card" data-aos="flip-left" data-aos-delay="300">
+            <div>
+                <h1>7K</h1>
+                <p>Happy Clients</p>
+            </div>
+        </div>
+        <div class="customers-card" data-aos="flip-left" data-aos-delay="400">
+            <div>
+                <h1>156</h1>
+                <p>Mobile Apps</p>
+            </div>
+        </div>
+        <div class="customers-card" data-aos="flip-left" data-aos-delay="500">
+            <div>
+                <h1>65</h1>
+                <p>Unique ideas</p>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <div class="footer-container">
@@ -158,12 +151,35 @@
         </div>
     </footer>
 
-    <script src="script.js">
-        AOS.init({
-            duration: 1200,
-            once: true,
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize AOS animation library
+            AOS.init({
+                duration: 1200,
+                once: true,
+            });
+            
+            // Hamburger menu functionality
+            const hamburger = document.querySelector('.hamburger-menu');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            hamburger.addEventListener('click', function() {
+                // Toggle the hamburger menu animation
+                this.classList.toggle('change');
+                
+                // Toggle the navigation menu visibility with slide animation
+                navMenu.classList.toggle('show');
+            });
+            
+            // Close menu when clicking on a link (for mobile)
+            const navLinks = document.querySelectorAll('.nav-menu a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('change');
+                    navMenu.classList.remove('show');
+                });
+            });
         });
     </script>
-    
 </body>
 </html>
